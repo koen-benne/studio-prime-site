@@ -6,7 +6,7 @@ function TeamMember(props) {
       <div className="TeamMember-content">
         <h3 className="TeamMember-name">{props.name}</h3>
         <p className="TeamMember-study">CMD</p>
-        <img className="TeamMember-image" src={"/src/assets/images/" + props.name + ".png"} alt="Team member" />
+        <img className="TeamMember-image" src={"/images/" + props.name + ".png"} alt="Team member" />
       </div>
     </div>
   );

@@ -6,7 +6,8 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "build-static": "esbuild src/index.jsx --bundle --minify --outfile=public/index.mjs --loader:.jsx=jsx --format=esm --public-path=/"
   },
   "license": "MIT",
   "devDependencies": {
@@ -15,6 +16,12 @@
     "vite-plugin-solid": "^2.7.0"
   },
   "dependencies": {
+    "esbuild": "^0.19.2",
+    "esbuild-plugin-postcss": "^0.2.1",
+    "esbuild-plugin-solid": "^0.5.0",
+    "postcss": "^8.4.29",
+    "postcss-import": "^15.1.0",
+    "postcss-url": "^10.1.3",
     "solid-js": "^1.7.6"
   }
 }

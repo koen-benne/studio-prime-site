@@ -15,7 +15,7 @@ function App() {
         />
 
       <header className="App-header">
-        <img src="/src/assets/images/logo.svg" className="App-logo" alt="logo" />
+        <img src="/images/logo.svg" className="App-logo" alt="logo" />
       </header>
       <Front />
       <div className="content">

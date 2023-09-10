@@ -12,7 +12,7 @@ function Deliverables() {
       <div className="Deliverables-container">
         <div className="Deliverables-subcontainer">
           <a onClick={() => setIsModalOpen(true)} className="Deliverables-item Deliverables-styleguide-button">
-            <img src="/src/assets/images/styleguide.svg" className="Deliverables-styleguide-image" alt="Styleguide image" />
+            <img src="/images/styleguide.svg" className="Deliverables-styleguide-image" alt="Styleguide image" />
           </a>
           <div className="Deliverables-item"></div>
         </div>
