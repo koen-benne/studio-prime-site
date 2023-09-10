@@ -1,0 +1,49 @@
+.Front-container {
+  background-image: url(/src/assets/images/Background.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 140px);
+}
+
+.Front-title {
+  padding-left: 35px;
+}
+
+.Front-text {
+  font-size: 1.35em;
+  padding-left: 35px;
+  text-align: left;
+  width: 80%;
+}
+
+.Front-crown {
+  position: absolute;
+  right: -20px;
+  bottom: -30px;
+  width: 80%;
+}
+
+@media (min-width: 480px) {
+  .Front-container {
+    height: calc(100vh - 190px);
+  }
+
+  .Front-crown {
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
+    width: 45%;
+    max-width: 90vh;
+  }
+
+  .Front-title {
+    padding-left: 100px;
+  }
+
+  .Front-text {
+    padding-left: 100px;
+    width: 40%;
+  }
+}
