@@ -1,0 +1,7 @@
+#!/bin/sh
+
+bunx rollup --bundleConfigAsCjs -c rollup-config.js && bun generate.js
+cd www
+cp public/images ./images -r
+cp public/fonts ./fonts -r
+sed -i 's/\/images/.\/images/g' main.js
