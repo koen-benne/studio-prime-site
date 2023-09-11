@@ -38,7 +38,7 @@
   width: 80vw;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .Modal-image {
     height: 80vh;
     width: auto;
