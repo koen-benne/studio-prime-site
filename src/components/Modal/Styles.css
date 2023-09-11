@@ -33,7 +33,14 @@
   border-radius: 20px;
   overflow: hidden;
   vertical-align: top;
-  width: 50vw;
-  height: auto;
   margin: 0;
+  height: auto;
+  width: 80vw;
+}
+
+@media (max-width: 480px) {
+  .Modal-image {
+    height: 80vh;
+    width: auto;
+  }
 }
