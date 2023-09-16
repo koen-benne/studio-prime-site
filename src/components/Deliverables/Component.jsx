@@ -1,4 +1,4 @@
-import './Styles.css';
+import styles from './Styles.module.css';
 import Modal from '../Modal/Component';
 import { createSignal } from 'solid-js';
 
@@ -8,17 +8,17 @@ function Deliverables() {
   return (
     <>
       <Modal isOpen={isModalOpen} close={() => setIsModalOpen(false)}/>
-      <h2 className="Deliverables-title">Deliverables</h2>
-      <div className="Deliverables-container">
-        <div className="Deliverables-subcontainer">
-          <a onClick={() => setIsModalOpen(true)} className="Deliverables-item Deliverables-styleguide-button">
-            <img src="/images/styleguide.svg" className="Deliverables-styleguide-image" alt="Styleguide image" />
+      <h2 class={styles.title}>Deliverables</h2>
+      <div class={styles.container}>
+        <div class={styles.subcontainer}>
+          <a onClick={() => setIsModalOpen(true)} class={`${styles.item} ${styles.styleguideButton}`}>
+            <img src="/images/styleguide.svg" class={styles.styleguideImage} alt="Styleguide image" />
           </a>
-          <div className="Deliverables-item"></div>
+          <div class={styles.item}></div>
         </div>
-        <div className="Deliverables-subcontainer">
-          <div className="Deliverables-item"></div>
-          <div className="Deliverables-item"></div>
+        <div class={styles.subcontainer}>
+          <div class={styles.item}></div>
+          <div class={styles.item}></div>
         </div>
       </div>
     </>

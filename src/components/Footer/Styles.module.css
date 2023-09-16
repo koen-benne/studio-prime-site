@@ -1,4 +1,4 @@
-.Footer-container {
+.container {
   height: 140px;
   background: linear-gradient(250deg, #B318EA, #1AAD9C);
   padding: 40px 35px 20px 35px;
@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 
-.Footer-text-container {
+.textContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,20 +16,20 @@
   font-size: 0.75em;
 }
 
-.Footer-logo {
+.logo {
   height: 70px;
 }
 
-.Footer-bronnenlijst {
+.bronnenlijst {
   text-decoration: underline;
 }
 
 @media (min-width: 480px) {
-  .Footer-container {
+  .container {
     padding: 40px 100px 20px 100px;
   height: 170px;
   }
-  .Footer-text-container {
+  .text-container {
     font-size: 0.85em;
   }
 }

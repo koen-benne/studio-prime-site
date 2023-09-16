@@ -1,14 +1,14 @@
-import './Styles.css';
+import styles from './Styles.module.css';
 
 function TeamMember(props) {
   return (
-    <div className="TeamMember-container">
-      <div className="TeamMember-content">
-        <div className="TeamMember-text-container">
-          <h3 className="TeamMember-name">{ props.name }</h3>
-          <p className="TeamMember-study">{ props.course }</p>
+    <div class={styles.container}>
+      <div class={styles.content}>
+        <div class={styles.textContainer}>
+          <h3 class={styles.name}>{props.name}</h3>
+          <p class={styles.study}>{props.course}</p>
         </div>
-        <img className="TeamMember-image" src={"/images/" + props.name + ".png"} alt="Team member" />
+        <img class={styles.image} src={"/images/" + props.name + ".png"} alt="Team member" />
       </div>
     </div>
   );

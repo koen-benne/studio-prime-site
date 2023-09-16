@@ -2,12 +2,10 @@
 
 bun build.js
 cd docs
-cp -f ../www/* ./
+cp -fr ../public/* ./
 if [ "$(uname)" = "Darwin" ]; then
   echo "Running on macOS"
   gsed -i 's/\/images/.\/images/g' main.js
-  gsed -i 's/if(et.env.DEV&&!(be instanceof HTMLElement))throw new Error("Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got misspelled?");//' main.js
 else
   sed -i 's/\/images/.\/images/g' main.js
-  sed -i 's/if(et.env.DEV&&!(be instanceof HTMLElement))throw new Error("Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got misspelled?");//' main.js
 fi

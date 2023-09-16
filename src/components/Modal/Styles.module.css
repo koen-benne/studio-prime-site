@@ -1,4 +1,4 @@
-.Modal-container {
+.container {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,11 +11,11 @@
   align-items: center;
 }
 
-.Modal-content {
+.content {
   position: relative;
 }
 
-.Modal-close-button {
+.closeButton {
   color: white;
   font-size: 1.5em;
   width: 1.3em;
@@ -29,7 +29,7 @@
   cursor: pointer;
 }
 
-.Modal-image {
+.image {
   border-radius: 20px;
   overflow: hidden;
   vertical-align: top;
@@ -39,7 +39,7 @@
 }
 
 @media (min-width: 480px) {
-  .Modal-image {
+  .image {
     height: 80vh;
     width: auto;
   }

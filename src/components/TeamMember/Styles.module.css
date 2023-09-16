@@ -1,4 +1,4 @@
-.TeamMember-container {
+.container {
   height: 100%;
   align-items: center;
   border-width: 5px;
@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.TeamMember-content {
+.content {
   border-radius: 15px;
   height: 100%;
   background-color: white;
@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.TeamMember-image {
+.image {
   border-radius: 15px;
   width: 100%;
   height: auto;
@@ -25,22 +25,22 @@
   bottom: 0;
 }
 
-.TeamMember-study {
+.study {
   margin: 5px 0 0 0;
 }
 
 @media(min-width: 830px) {
-  .TeamMember-container {
+  .container {
     border-width: 7px;
     border-radius: 40px;
     padding: 7px;
   }
 
-  .TeamMember-content {
+  .content {
     border-radius: 35px;
   }
 
-  .TeamMember-image {
+  .image {
     border-radius: 30px;
   }
 }

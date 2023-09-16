@@ -1,10 +1,10 @@
-.TeamSection-container {
+.container {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
 
-.TeamSection-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   grid-column-gap: 20px;
@@ -12,16 +12,16 @@
   text-align: center;
 }
 
-.TeamSection-title {
+.title {
   text-align: center;
 }
 
 @media(min-width: 830px) {
-  .TeamSection-container {
+  .container {
     max-width: 1512px;
   }
 
-  .TeamSection-grid {
+  .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-column-gap: 41px;
@@ -29,7 +29,7 @@
     text-align: center;
   }
 
-  .TeamSection-title {
+  .title {
     text-align: center;
   }
 }

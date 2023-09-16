@@ -1,4 +1,4 @@
-.Front-container {
+.container {
   background-image: url(../../../public/images/Background.png);
   background-size: cover;
   background-position: center;
@@ -7,13 +7,13 @@
   min-height: calc(100vh - 140px);
 }
 
-.Front-title {
+.title {
   padding: 0 35px;
   position: relative;
   z-index: 1;
 }
 
-.Front-text {
+.text {
   font-size: 1.35em;
   padding: 0 35px;
   text-align: left;
@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.Front-crown {
+.crown {
   position: absolute;
   right: -20px;
   bottom: -30px;
@@ -30,21 +30,21 @@
 }
 
 @media (min-width: 1042px) {
-  .Front-container {
+  .container {
     min-height: calc(100vh - 210px) !important;
   }
 
-  .Front-title {
+  .title {
     font-size: 5em !important;
   }
 }
 
 @media (min-width: 480px) {
-  .Front-container {
+  .container {
     min-height: calc(100vh - 130px);
   }
 
-  .Front-crown {
+  .crown {
     position: absolute;
     right: -20px;
     bottom: -30px;
@@ -52,12 +52,12 @@
     max-width: 90vh;
   }
 
-  .Front-title {
+  .title {
     font-size: 4em;
     padding: 0 100px;
   }
 
-  .Front-text {
+  .text {
     padding: 0 100px;
     width: 40%;
   }

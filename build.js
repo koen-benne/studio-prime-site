@@ -1,5 +1,6 @@
 const { build } = require("esbuild");
 const { solidPlugin } = require("esbuild-plugin-solid");
+const cssModulesPlugin = require("esbuild-css-modules-plugin");
 
 build({
   entryPoints: ["src/index.jsx"],
@@ -10,8 +11,10 @@ build({
     ".svg": "dataurl",
     ".otf": "dataurl",
     ".png": "dataurl",
-    ".css": "css"
   },
   logLevel: "info",
-  plugins: [solidPlugin()],
+  plugins: [
+    solidPlugin(),
+    cssModulesPlugin()
+  ],
 }).catch(() => process.exit(1));
